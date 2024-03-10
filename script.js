@@ -14,7 +14,7 @@ function updateClock() {
     setTimeout(updateClock, 1000);
 }
 
-
 window.onload = function () {
     updateClock();
+
 };
