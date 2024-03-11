@@ -1,17 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var openVideoButton = document.getElementById("openVideoButton");
-    var videoModal = document.getElementById("videoModal");
-    var closeVideoModal = document.getElementById("closeVideoModal");
     var videoInfoButton = document.getElementById("videoInfoButton");
     var videoInfoCard = document.getElementById("videoInfoCard");
-
-    openVideoButton.addEventListener("click", function() {
-        videoModal.style.display = "block";
-    });
-
-    closeVideoModal.addEventListener("click", function() {
-        videoModal.style.display = "none";
-    });
 
     videoInfoButton.addEventListener("click", function() {
         if (videoInfoCard.style.display === "none" || videoInfoCard.style.display === "") {
@@ -26,13 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
         var hours = now.getHours();
         var minutes = now.getMinutes();
         var seconds = now.getSeconds();
+        var day = now.getDate();
+        var month = now.getMonth() +1;
+        var year = now.getFullYear();
 
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         var timeString = hours + ":" + minutes + ":" + seconds;
+        var dateString = day + "/" + month + "/" + year;
+
         document.getElementById("clockDisplay").innerHTML = timeString;
+        document.getElementById("dateDisplay").innerHTML = dateString;
 
         setTimeout(updateClock, 1000);
     }

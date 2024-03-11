@@ -1,28 +1,55 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Still in Work</title>
-            <link rel="stylesheet" href="style test.css">
-        </head>
-        <body>
-            <div class="container">
-                <h1>Still Working</h1>
-                <p>Meanwhile, you can find me on social media:</p>
+<!DOCTYPE html>
+<html lang="en">
 
-                <div class="social-links">
-                    <a href="https://www.instagram.com/hindreko/" target="_blank">
-                        <img src="instagram-logo.png" alt="Instagram Logo">
-                    </a>
-                
-                    <a href="https://www.facebook.com/henrierik.hindrko/" target="_blank">
-                        <img src="facebook-logo.png" alt="Facebook Logo">
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still Working</title>
+    <link rel="stylesheet" href="style test.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Still Working</h1>
+    
+        <div class="clock">
+            <h1>Clock</h1>
+            <p id="clockDisplay"></p>
+            <p id="dateDisplay"></p>
+        </div>
+
+        <div class="video-container">
+            <div class="videoModal" id="videoModal">
+                <div class="modal-content">
+                    <span id="closeVideoModal" class="close">&times;</span>
+                    <video id="fullscreenVideo" controls width="100%" height="auto">
+                        <source src="earth.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="clock">
-                    <p id="clockDisplay"></p>
             </div>
-            <script src="script test.js"></script>
-        </body>
-    </html>
+        </div>
+
+        <button id="videoInfoButton" class="cube-button">Video Info</button>
+
+        <div id="videoInfoCard" style="display: none;">
+            <h1>Video Information</h1>
+            <p>Title: Earth Angle (original Hacker)</p>
+            <p>Artist: <a href="https://en.wikipedia.org/wiki/Death_Grips" target="_blank">Death Grips</a></p>
+            <p>Duration: 5:20 </p>
+            <p>Description: This is the first version of Hacker. Originally, it was made for their mixtape
+                <a href="https://soundcloud.com/deathgrips/sets/death-grips-exmilitary" target="_blank">(Ex-Military)</a>
+                on SoundCloud since it's not available on Apple Music or Spotify. However, it later ended up on the 2012 classic
+                album <a href="https://music.apple.com/us/album/the-money-store/515449028" target="_blank">The Money Store</a>
+                because the band felt it didn't fit on the mixtape. You can also listen on
+                <a href="https://open.spotify.com/album/1PQDjdBpHPikAodJqjzm6a" target="_blank">Spotify</a>.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script test.js"></script>
+</body>
+
+</html>
