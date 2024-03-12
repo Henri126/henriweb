@@ -85,6 +85,38 @@ p {
 
 @media screen and (max-width: 600px) {
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .cube-button{
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    .clock{
+        margin-top: 20px;
+    }
+
+    #clockDisplay,
+    #dateDisplay{
+        font-size: 24px;
+    }
+
+    #videoModal{
+        margin-top: 20px;
+    }
+
+    #videoModal video{
+        max-width: 100%;
+        height: auto;
     }
 }
